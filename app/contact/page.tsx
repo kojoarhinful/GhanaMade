@@ -6,45 +6,39 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="border-b border-gray-200 py-6">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-3 items-center">
-            <div className="flex justify-start">
-              <Link href="/" className="text-2xl font-serif font-medium">
-                GhanaMade
-              </Link>
-            </div>
-            <nav className="hidden md:flex justify-center space-x-8">
-              <Link href="/shop" className="text-gray-600 hover:text-black transition-colors">
-                Shop
-              </Link>
-              <Link href="/about" className="text-gray-600 hover:text-black transition-colors">
-                About
-              </Link>
-              <Link href="/contact" className="text-black transition-colors">
-                Contact
-              </Link>
-            </nav>
-            <div className="flex justify-end">
-              <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-shopping-bag"
-                >
-                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                  <path d="M3 6h18" />
-                  <path d="M16 10a4 4 0 0 1-8 0" />
-                </svg>
-              </button>
-            </div>
-          </div>
+        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
+          <Link href="/" className="text-2xl font-serif font-medium">
+            GhanaMade
+          </Link>
+          <nav className="hidden md:flex space-x-8">
+            <Link href="/shop" className="text-gray-600 hover:text-black transition-colors">
+              Shop
+            </Link>
+            <Link href="/about" className="text-gray-600 hover:text-black transition-colors">
+              About
+            </Link>
+            <Link href="/contact" className="text-black transition-colors">
+              Contact
+            </Link>
+          </nav>
+          <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-shopping-bag"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </button>
         </div>
       </header>
 
